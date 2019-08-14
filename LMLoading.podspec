@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name               = "LMLoading"
+  s.name               = "c"
   s.version            = "1.0.0"
   s.summary            = "LMLoading Framework"
   s.description        = "LMLoading is the best and easy way to show an loading in your view"
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.platform           = :ios, "10.0"
   s.source             = { :git => "https://github.com/limadeveloper/LMLoading.git", :tag => "#{s.version}" }
   s.framework          = "UIKit"
-  s.source_files       = "Framework/LMKit/**/*.{swift}"
-  s.resources          = "Framework/LMKit/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,json}"
+  s.source_files       = "Framework/LMLoading/**/*.{swift}"
+  s.resources          = "Framework/LMLoading/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,json}"
   s.swift_version      = "5.0"
   s.static_framework   = true
   s.dependency 'lottie-ios'
