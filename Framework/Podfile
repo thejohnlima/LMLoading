@@ -8,8 +8,9 @@ target 'LMLoading' do
   pod 'SwiftLint'
   pod 'lottie-ios'
 
-  target 'LMLoadingTests' do
-    inherit! :search_paths
-    # Pods for testing
+  target 'LMIntegrationTests' do
+    inherit! :complete
+    # Pods for LMIntegrationTests
+    pod 'KIF'
   end
 end
