@@ -13,8 +13,6 @@
 		1BD877702303B26B0011F211 /* network_error_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BD877662303B26B0011F211 /* network_error_animation.json */; };
 		1BD877732303B26B0011F211 /* balls_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BD877692303B26B0011F211 /* balls_animation.json */; };
 		1BD877742303B26B0011F211 /* image_loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8776A2303B26B0011F211 /* image_loading_animation.json */; };
-		1BD8777E2303B3990011F211 /* LMLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE0D865230398DF00E5E9E7 /* LMLoading.framework */; };
-		1BD877852303B3F80011F211 /* LMLoadingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD877842303B3F80011F211 /* LMLoadingViewTests.swift */; };
 		1BE0D86A230398DF00E5E9E7 /* LMLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE0D868230398DF00E5E9E7 /* LMLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BE0D8742303A06F00E5E9E7 /* LMLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0D8712303A06E00E5E9E7 /* LMLoadingView.swift */; };
 		1BE0D8752303A06F00E5E9E7 /* LMLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0D8722303A06E00E5E9E7 /* LMLoading.swift */; };
@@ -22,18 +20,7 @@
 		1BE0D8782303A23600E5E9E7 /* LMCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0D8772303A23600E5E9E7 /* LMCompletion.swift */; };
 		1BE0D87A2303A36C00E5E9E7 /* LMLoadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0D8792303A36C00E5E9E7 /* LMLoadingType.swift */; };
 		81F123B5E425F7A3E441C597 /* Pods_LMLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568E0DF833681836E5F7FD5B /* Pods_LMLoading.framework */; };
-		AF7873AFF598806A9F5A9803 /* Pods_LMLoadingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF600129633781097ABAB75 /* Pods_LMLoadingTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1BD8777F2303B3990011F211 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1BE0D85C230398DF00E5E9E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BE0D864230398DF00E5E9E7;
-			remoteInfo = LMLoading;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1BD8775D2303B0970011F211 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -42,9 +29,6 @@
 		1BD877662303B26B0011F211 /* network_error_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = network_error_animation.json; sourceTree = "<group>"; };
 		1BD877692303B26B0011F211 /* balls_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = balls_animation.json; sourceTree = "<group>"; };
 		1BD8776A2303B26B0011F211 /* image_loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = image_loading_animation.json; sourceTree = "<group>"; };
-		1BD877792303B3990011F211 /* LMLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BD8777D2303B3990011F211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BD877842303B3F80011F211 /* LMLoadingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMLoadingViewTests.swift; sourceTree = "<group>"; };
 		1BE0D865230398DF00E5E9E7 /* LMLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE0D868230398DF00E5E9E7 /* LMLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLoading.h; sourceTree = "<group>"; };
 		1BE0D869230398DF00E5E9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,15 +46,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1BD877762303B3990011F211 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BD8777E2303B3990011F211 /* LMLoading.framework in Frameworks */,
-				AF7873AFF598806A9F5A9803 /* Pods_LMLoadingTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1BE0D862230398DF00E5E9E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,20 +77,10 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
-		1BD8777A2303B3990011F211 /* LMLoadingTests */ = {
-			isa = PBXGroup;
-			children = (
-				1BD8777D2303B3990011F211 /* Info.plist */,
-				1BD877842303B3F80011F211 /* LMLoadingViewTests.swift */,
-			);
-			path = LMLoadingTests;
-			sourceTree = "<group>";
-		};
 		1BE0D85B230398DF00E5E9E7 = {
 			isa = PBXGroup;
 			children = (
 				1BE0D867230398DF00E5E9E7 /* LMLoading */,
-				1BD8777A2303B3990011F211 /* LMLoadingTests */,
 				1BE0D866230398DF00E5E9E7 /* Products */,
 				6CB499A084D20E182ADF8E6C /* Pods */,
 				3D786CFBD6CAB8DAB431550F /* Frameworks */,
@@ -126,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				1BE0D865230398DF00E5E9E7 /* LMLoading.framework */,
-				1BD877792303B3990011F211 /* LMLoadingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,25 +153,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1BD877782303B3990011F211 /* LMLoadingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BD877812303B3990011F211 /* Build configuration list for PBXNativeTarget "LMLoadingTests" */;
-			buildPhases = (
-				DD1079CB4031FF809ECFE881 /* [CP] Check Pods Manifest.lock */,
-				1BD877752303B3990011F211 /* Sources */,
-				1BD877762303B3990011F211 /* Frameworks */,
-				1BD877772303B3990011F211 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1BD877802303B3990011F211 /* PBXTargetDependency */,
-			);
-			name = LMLoadingTests;
-			productName = LMLoadingTests;
-			productReference = 1BD877792303B3990011F211 /* LMLoadingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		1BE0D864230398DF00E5E9E7 /* LMLoading */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BE0D86D230398DF00E5E9E7 /* Build configuration list for PBXNativeTarget "LMLoading" */;
@@ -239,10 +184,6 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = LMLoading;
 				TargetAttributes = {
-					1BD877782303B3990011F211 = {
-						CreatedOnToolsVersion = 11.0;
-						LastSwiftMigration = 1100;
-					};
 					1BE0D864230398DF00E5E9E7 = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
@@ -263,19 +204,11 @@
 			projectRoot = "";
 			targets = (
 				1BE0D864230398DF00E5E9E7 /* LMLoading */,
-				1BD877782303B3990011F211 /* LMLoadingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1BD877772303B3990011F211 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1BE0D863230398DF00E5E9E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,39 +265,9 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD1079CB4031FF809ECFE881 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LMLoadingTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1BD877752303B3990011F211 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BD877852303B3F80011F211 /* LMLoadingViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1BE0D861230398DF00E5E9E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,56 +282,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1BD877802303B3990011F211 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1BE0D864230398DF00E5E9E7 /* LMLoading */;
-			targetProxy = 1BD8777F2303B3990011F211 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		1BD877822303B3990011F211 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4D287FA2160C86F7083A087 /* Pods-LMLoadingTests.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LMLoadingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMLoadingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1BD877832303B3990011F211 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A36DFBA8F746ADBE72DD585 /* Pods-LMLoadingTests.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LMLoadingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMLoadingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		1BE0D86B230398DF00E5E9E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -607,15 +461,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BD877812303B3990011F211 /* Build configuration list for PBXNativeTarget "LMLoadingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BD877822303B3990011F211 /* Debug */,
-				1BD877832303B3990011F211 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1BE0D85F230398DF00E5E9E7 /* Build configuration list for PBXProject "LMLoading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
