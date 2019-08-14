@@ -36,9 +36,10 @@ platform :ios do
       scheme: "LMLoading",
       code_coverage: true,
       output_directory: "reports",
+      derived_data_path: "DerivedData",
       fail_build: false,
       suppress_xcode_output: false,
-      device: "iPhone SE",
+      device: "iPhone 8",
       configuration: "Debug",
       output_types: "junit"
     )

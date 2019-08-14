@@ -90,9 +90,9 @@ Carthage/Build
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 Framework/fastlane/report.xml
 Framework/fastlane/README.md
+Framework/reports
+
+reports
 
 # Sonar
 .scannerwork
-
-# Reports
-reports
