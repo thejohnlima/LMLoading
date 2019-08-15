@@ -61,6 +61,7 @@ public class LMLoadingView: UIView {
     animationView.frame = animationContainerView.bounds
     animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     animationView.contentMode = .scaleAspectFit
+    animationView.accessibilityIdentifier = "ANIMATION_VIEW"
 
     if loop {
       animationView.loopMode = .loop

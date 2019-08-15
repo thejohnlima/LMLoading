@@ -20,42 +20,42 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
 import KIF
 @testable import LMLoading
 import XCTest
 
 protocol IntegrationTestCaseProtocol {
-    func withLabel(_ label: LabelViewProtocol) -> KIFUIViewTestActor?
-    func withIdentifier(_ identifier: IdentifierViewProtocol) -> KIFUIViewTestActor?
+  func withLabel(_ label: LabelViewProtocol) -> KIFUIViewTestActor?
+  func withIdentifier(_ identifier: IdentifierViewProtocol) -> KIFUIViewTestActor?
 }
 
 /// IntegrationTetCase - stubs and KIF functions
-internal class IntegrationTestCase: KIFTestCase {
-    let bundleIdentifier = "thejohnlima.LMLoading"
+class IntegrationTestCase: KIFTestCase {
 
-    override func setUp() {
-        super.setUp()
-        UserDefaults.standard.removePersistentDomain(forName: bundleIdentifier)
-    }
-    
-    func screenshot(line: UInt, name: String, _ desc: String = "") {
-        try? UIApplication.shared.writeScreenshot(forLine: line, inFile: name, description: desc)
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-        //clear user status
-        UserDefaults.standard.removePersistentDomain(forName: bundleIdentifier)
-    }
-}
+  // MARK: - Properties
+  let bundleIdentifier = "thejohnlima.LMLoading"
 
-extension IntegrationTestCase {
-    func tester(_ file: String = #file, _ line: Int = #line) -> KIFUIViewTestActor {
-        return KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)
-    }
-    
-    func system(_ file: String = #file, _ line: Int = #line) -> KIFSystemTestActor {
-        return KIFSystemTestActor(inFile: file, atLine: line, delegate: self)
-    }
+  // MARK: - Overrides
+  override func setUp() {
+    super.setUp()
+    UserDefaults.standard.removePersistentDomain(forName: bundleIdentifier)
+  }
+
+  override func tearDown() {
+    UserDefaults.standard.removePersistentDomain(forName: bundleIdentifier)
+    super.tearDown()
+  }
+
+  // MARK: - Internal Methods
+  func screenshot(line: UInt, name: String, _ desc: String = "") {
+    try? UIApplication.shared.writeScreenshot(forLine: line, inFile: name, description: desc)
+  }
+
+  func tester(_ file: String = #file, _ line: Int = #line) -> KIFUIViewTestActor {
+    return KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)
+  }
+
+  func system(_ file: String = #file, _ line: Int = #line) -> KIFSystemTestActor {
+    return KIFSystemTestActor(inFile: file, atLine: line, delegate: self)
+  }
 }

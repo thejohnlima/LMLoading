@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2FF30B2305046D00196029 /* LMTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FF30A2305046D00196029 /* LMTestController.swift */; };
 		1BD8775E2303B0970011F211 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8775D2303B0970011F211 /* UIView+Extensions.swift */; };
 		1BD8776E2303B26B0011F211 /* error_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BD877642303B26B0011F211 /* error_animation.json */; };
 		1BD8776F2303B26B0011F211 /* success_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BD877652303B26B0011F211 /* success_animation.json */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2FF30A2305046D00196029 /* LMTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMTestController.swift; sourceTree = "<group>"; };
 		1BD8775D2303B0970011F211 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		1BD877642303B26B0011F211 /* error_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error_animation.json; sourceTree = "<group>"; };
 		1BD877652303B26B0011F211 /* success_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success_animation.json; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				5266B5B423043A150033E633 /* LMTestCase.swift */,
 				5266B5B2230438D80033E633 /* LMTestProtocols.swift */,
+				1B2FF30A2305046D00196029 /* LMTestController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			files = (
 				5266B5B523043A150033E633 /* LMTestCase.swift in Sources */,
 				5266B5B923043C280033E633 /* LMLoadingTests.swift in Sources */,
+				1B2FF30B2305046D00196029 /* LMTestController.swift in Sources */,
 				5266B5B3230438D80033E633 /* LMTestProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
