@@ -1,7 +1,7 @@
 # LMLoading
 
 [![GitHub release](https://img.shields.io/github/release/limadeveloper/LMLoading.svg)](https://github.com/limadeveloper/LMLoading/releases)
-[![Build Status](https://travis-ci.org/limadeveloper/LMLoading.svg?branch=master)](https://travis-ci.org/limadeveloper/LMLoading)
+[![Build Status](https://travis-ci.com/limadeveloper/LMLoading.svg?branch=master)](https://travis-ci.com/limadeveloper/LMLoading)
 [![codecov](https://codecov.io/gh/limadeveloper/LMLoading/branch/master/graph/badge.svg)](https://codecov.io/gh/limadeveloper/LMLoading)
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/LMLoading)
 [![Language](https://img.shields.io/badge/language-Swift%205.0-orange.svg)](https://developer.apple.com/swift/)
