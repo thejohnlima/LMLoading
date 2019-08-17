@@ -29,6 +29,7 @@ public class LMLoadingView: UIView {
   private let animationViewRoundedValue: CGFloat = 4
   
   // MARK: - Properties
+  @IBOutlet public weak var backgroundContainerView: UIView!
   @IBOutlet public weak var animationContainerView: UIView!
   
   // MARK: - Overrides
@@ -45,14 +46,14 @@ public class LMLoadingView: UIView {
   }
   
   // MARK: - Internal Methods
-  func start(animation type: LMLoadingType) {
-    create(animation: type, loop: true)
+  func start(animation type: LMLoadingType, completion: LMCompletion.Empty? = nil) {
+    create(animation: type, loop: true, completion: completion)
   }
   
   func stop(animation type: LMLoadingType, completion: @escaping LMCompletion.Empty) {
     create(animation: type, completion: completion)
   }
-
+  
   // MARK: - Private Methods
   private func create(animation: LMLoadingType,
                       loop: Bool = false,
@@ -61,14 +62,20 @@ public class LMLoadingView: UIView {
     animationView.frame = animationContainerView.bounds
     animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     animationView.contentMode = .scaleAspectFit
-
+    animationView.accessibilityIdentifier = "ANIMATION_VIEW"
+    
     if loop {
       animationView.loopMode = .loop
     }
-
+    
     animationContainerView.subviews.first { $0 is AnimationView }?.removeFromSuperview()
     animationContainerView.addSubview(animationView)
-
+    
+    guard animationView.window != nil else {
+      completion?()
+      return
+    }
+    
     animationView.play { _ in
       completion?()
     }

@@ -9,7 +9,7 @@ target 'LMLoading' do
   pod 'lottie-ios'
 
   target 'LMLoadingTests' do
-    inherit! :search_paths
-    # Pods for testing
+    inherit! :complete
+    # Pods for LMLoadingTests
   end
 end
