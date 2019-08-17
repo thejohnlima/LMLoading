@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name               = "c"
+  s.name               = "LMLoading"
   s.version            = "1.0.0"
   s.summary            = "LMLoading Framework"
   s.description        = "LMLoading is the best and easy way to show an loading in your view"
@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
   s.source_files       = "Framework/LMLoading/**/*.{swift}"
   s.resources          = "Framework/LMLoading/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,json}"
   s.swift_version      = "5.0"
-  s.static_framework   = true
   s.dependency 'lottie-ios'
   s.dependency 'SwiftLint'
 end
