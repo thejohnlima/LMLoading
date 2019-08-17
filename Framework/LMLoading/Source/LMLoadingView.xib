@@ -41,6 +41,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="animationContainerView" destination="hE1-Tt-y7L" id="rcl-8u-LRx"/>
+                <outlet property="backgroundContainerView" destination="ppa-Cl-Baa" id="ocW-wr-E7E"/>
             </connections>
             <point key="canvasLocation" x="138" y="142"/>
         </view>

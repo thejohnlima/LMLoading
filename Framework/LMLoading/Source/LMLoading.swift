@@ -23,22 +23,40 @@
 import UIKit
 
 public class LMLoading {
-
+  
   // MARK: - Properties
   static var loadingView: LMLoadingView?
-
+  
   public static var isLoading: Bool {
     return loadingView?.superview != nil
   }
-
+  
+  // MARK: - Enums
+  public enum ViewElements {
+    case background
+    case containerAnimation
+    case animation
+    
+    public var identifier: String {
+      switch self {
+      case .background:
+        return "BACKGROUND_VIEW"
+      case .containerAnimation:
+        return "CONTAINER_ANIMATION_VIEW"
+      case .animation:
+        return "ANIMATION_VIEW"
+      }
+    }
+  }
+  
   // MARK: - Public Methods
-  public static func show(loading: LMLoadingType, target: UIView) {
+  public static func show(loading: LMLoadingType, target: UIView, completion: (() -> Void)? = nil) {
     DispatchQueue.main.async {
       loadingView?.removeFromSuperview()
       loadingView = UIView.fromNib()
       guard let loadingView = loadingView else { return }
       target.addSubview(loadingView)
-      self.loadingView?.start(animation: loading)
+      self.loadingView?.start(animation: loading, completion: completion)
     }
   }
   
@@ -55,7 +73,7 @@ public class LMLoading {
       }
     }
   }
-
+  
   public static func stop() {
     loadingView?.removeFromSuperview()
   }

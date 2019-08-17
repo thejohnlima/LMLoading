@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B2FF30B2305046D00196029 /* LMTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FF30A2305046D00196029 /* LMTestController.swift */; };
 		1BD8775E2303B0970011F211 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8775D2303B0970011F211 /* UIView+Extensions.swift */; };
 		1BD8776E2303B26B0011F211 /* error_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BD877642303B26B0011F211 /* error_animation.json */; };
 		1BD8776F2303B26B0011F211 /* success_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BD877652303B26B0011F211 /* success_animation.json */; };
@@ -20,12 +19,10 @@
 		1BE0D8762303A06F00E5E9E7 /* LMLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE0D8732303A06E00E5E9E7 /* LMLoadingView.xib */; };
 		1BE0D8782303A23600E5E9E7 /* LMCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0D8772303A23600E5E9E7 /* LMCompletion.swift */; };
 		1BE0D87A2303A36C00E5E9E7 /* LMLoadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0D8792303A36C00E5E9E7 /* LMLoadingType.swift */; };
-		250FDFFE6B1E994C97F5716D /* Pods_LMLoading_LMIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4357711CA057F72B396A7C9A /* Pods_LMLoading_LMIntegrationTests.framework */; };
-		5266B5B3230438D80033E633 /* LMTestProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266B5B2230438D80033E633 /* LMTestProtocols.swift */; };
-		5266B5B523043A150033E633 /* LMTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266B5B423043A150033E633 /* LMTestCase.swift */; };
+		4B202BFCE87F45CBC876F845 /* Pods_LMLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2E36E9657012A6D39DC94A /* Pods_LMLoading.framework */; };
 		5266B5B923043C280033E633 /* LMLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266B5B823043C280033E633 /* LMLoadingTests.swift */; };
 		52E2C64923042F8F0085CB6D /* LMLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE0D865230398DF00E5E9E7 /* LMLoading.framework */; };
-		67DB1CF43AEF5401F87D3C2E /* Pods_LMLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BBA0CC873C2A14140EA8EA /* Pods_LMLoading.framework */; };
+		C73C01255C8A0D45E7E7CB37 /* Pods_LMLoading_LMLoadingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83231095D6D7920D6F04FF3 /* Pods_LMLoading_LMLoadingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B2FF30A2305046D00196029 /* LMTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMTestController.swift; sourceTree = "<group>"; };
 		1BD8775D2303B0970011F211 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		1BD877642303B26B0011F211 /* error_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error_animation.json; sourceTree = "<group>"; };
 		1BD877652303B26B0011F211 /* success_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success_animation.json; sourceTree = "<group>"; };
@@ -49,24 +45,20 @@
 		1BE0D865230398DF00E5E9E7 /* LMLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE0D868230398DF00E5E9E7 /* LMLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLoading.h; sourceTree = "<group>"; };
 		1BE0D869230398DF00E5E9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BE0D8712303A06E00E5E9E7 /* LMLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMLoadingView.swift; sourceTree = "<group>"; };
-		1BE0D8722303A06E00E5E9E7 /* LMLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMLoading.swift; sourceTree = "<group>"; };
+		1BE0D8712303A06E00E5E9E7 /* LMLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LMLoadingView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		1BE0D8722303A06E00E5E9E7 /* LMLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LMLoading.swift; sourceTree = "<group>"; tabWidth = 2; };
 		1BE0D8732303A06E00E5E9E7 /* LMLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMLoadingView.xib; sourceTree = "<group>"; };
 		1BE0D8772303A23600E5E9E7 /* LMCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMCompletion.swift; sourceTree = "<group>"; };
 		1BE0D8792303A36C00E5E9E7 /* LMLoadingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMLoadingType.swift; sourceTree = "<group>"; };
-		3897D4D53E663A6CD8623D46 /* Pods-LMIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-LMIntegrationTests/Pods-LMIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
-		4357711CA057F72B396A7C9A /* Pods_LMLoading_LMIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMLoading_LMIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5266B5B2230438D80033E633 /* LMTestProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMTestProtocols.swift; sourceTree = "<group>"; };
-		5266B5B423043A150033E633 /* LMTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMTestCase.swift; sourceTree = "<group>"; };
-		5266B5B823043C280033E633 /* LMLoadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMLoadingTests.swift; sourceTree = "<group>"; };
-		52E2C64423042F8F0085CB6D /* LMIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CD24CE1BDA1BFA53510D78 /* Pods-LMLoading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading.debug.xcconfig"; path = "Target Support Files/Pods-LMLoading/Pods-LMLoading.debug.xcconfig"; sourceTree = "<group>"; };
+		41E17F4FB980B845C4A736D3 /* Pods-LMLoading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading.release.xcconfig"; path = "Target Support Files/Pods-LMLoading/Pods-LMLoading.release.xcconfig"; sourceTree = "<group>"; };
+		5266B5B823043C280033E633 /* LMLoadingTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LMLoadingTests.swift; sourceTree = "<group>"; tabWidth = 2; };
+		52E2C64423042F8F0085CB6D /* LMLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E2C64823042F8F0085CB6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65DCEA7B48B65489E317BFAF /* Pods-LMLoading-LMIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading-LMIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-LMLoading-LMIntegrationTests/Pods-LMLoading-LMIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		994DE1D70F655C4FA8D89DC2 /* Pods-LMIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-LMIntegrationTests/Pods-LMIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A0BBA0CC873C2A14140EA8EA /* Pods_LMLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF3ABA53EB677FF4860B84A5 /* Pods-LMLoading-LMIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading-LMIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-LMLoading-LMIntegrationTests/Pods-LMLoading-LMIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
-		B4F0723F7DA8695281A7AFFD /* Pods-LMLoading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading.release.xcconfig"; path = "Target Support Files/Pods-LMLoading/Pods-LMLoading.release.xcconfig"; sourceTree = "<group>"; };
-		DEA9EC2BD6C78A26FFEFD0A4 /* Pods-LMLoading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading.debug.xcconfig"; path = "Target Support Files/Pods-LMLoading/Pods-LMLoading.debug.xcconfig"; sourceTree = "<group>"; };
+		C83231095D6D7920D6F04FF3 /* Pods_LMLoading_LMLoadingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMLoading_LMLoadingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9B3105F7D2E18D224C637B /* Pods-LMLoading-LMLoadingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading-LMLoadingTests.debug.xcconfig"; path = "Target Support Files/Pods-LMLoading-LMLoadingTests/Pods-LMLoading-LMLoadingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF2E36E9657012A6D39DC94A /* Pods_LMLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3ACE3282F3071EF73A72B8 /* Pods-LMLoading-LMLoadingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMLoading-LMLoadingTests.release.xcconfig"; path = "Target Support Files/Pods-LMLoading-LMLoadingTests/Pods-LMLoading-LMLoadingTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DB1CF43AEF5401F87D3C2E /* Pods_LMLoading.framework in Frameworks */,
+				4B202BFCE87F45CBC876F845 /* Pods_LMLoading.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E2C64923042F8F0085CB6D /* LMLoading.framework in Frameworks */,
-				250FDFFE6B1E994C97F5716D /* Pods_LMLoading_LMIntegrationTests.framework in Frameworks */,
+				C73C01255C8A0D45E7E7CB37 /* Pods_LMLoading_LMLoadingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,10 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				1BE0D867230398DF00E5E9E7 /* LMLoading */,
-				52E2C64523042F8F0085CB6D /* LMIntegrationTests */,
+				52E2C64523042F8F0085CB6D /* LMLoadingTests */,
 				1BE0D866230398DF00E5E9E7 /* Products */,
 				727AC9DE9719B411CAB4E85A /* Pods */,
-				80A64C7B5DE4EBD662958B81 /* Frameworks */,
+				DE8084960C0182CB92966CB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				1BE0D865230398DF00E5E9E7 /* LMLoading.framework */,
-				52E2C64423042F8F0085CB6D /* LMIntegrationTests.xctest */,
+				52E2C64423042F8F0085CB6D /* LMLoadingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,44 +146,31 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		5266B5B623043BD00033E633 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				5266B5B423043A150033E633 /* LMTestCase.swift */,
-				5266B5B2230438D80033E633 /* LMTestProtocols.swift */,
-				1B2FF30A2305046D00196029 /* LMTestController.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		52E2C64523042F8F0085CB6D /* LMIntegrationTests */ = {
+		52E2C64523042F8F0085CB6D /* LMLoadingTests */ = {
 			isa = PBXGroup;
 			children = (
 				52E2C64823042F8F0085CB6D /* Info.plist */,
 				5266B5B823043C280033E633 /* LMLoadingTests.swift */,
-				5266B5B623043BD00033E633 /* Common */,
 			);
-			path = LMIntegrationTests;
+			path = LMLoadingTests;
 			sourceTree = "<group>";
 		};
 		727AC9DE9719B411CAB4E85A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				994DE1D70F655C4FA8D89DC2 /* Pods-LMIntegrationTests.debug.xcconfig */,
-				3897D4D53E663A6CD8623D46 /* Pods-LMIntegrationTests.release.xcconfig */,
-				DEA9EC2BD6C78A26FFEFD0A4 /* Pods-LMLoading.debug.xcconfig */,
-				B4F0723F7DA8695281A7AFFD /* Pods-LMLoading.release.xcconfig */,
-				65DCEA7B48B65489E317BFAF /* Pods-LMLoading-LMIntegrationTests.debug.xcconfig */,
-				AF3ABA53EB677FF4860B84A5 /* Pods-LMLoading-LMIntegrationTests.release.xcconfig */,
+				39CD24CE1BDA1BFA53510D78 /* Pods-LMLoading.debug.xcconfig */,
+				41E17F4FB980B845C4A736D3 /* Pods-LMLoading.release.xcconfig */,
+				CA9B3105F7D2E18D224C637B /* Pods-LMLoading-LMLoadingTests.debug.xcconfig */,
+				FA3ACE3282F3071EF73A72B8 /* Pods-LMLoading-LMLoadingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		80A64C7B5DE4EBD662958B81 /* Frameworks */ = {
+		DE8084960C0182CB92966CB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0BBA0CC873C2A14140EA8EA /* Pods_LMLoading.framework */,
-				4357711CA057F72B396A7C9A /* Pods_LMLoading_LMIntegrationTests.framework */,
+				CF2E36E9657012A6D39DC94A /* Pods_LMLoading.framework */,
+				C83231095D6D7920D6F04FF3 /* Pods_LMLoading_LMLoadingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,7 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BE0D86D230398DF00E5E9E7 /* Build configuration list for PBXNativeTarget "LMLoading" */;
 			buildPhases = (
-				3E93CCA1A925D632A74A29C2 /* [CP] Check Pods Manifest.lock */,
+				4E0D7FBF840C10B2A787B99F /* [CP] Check Pods Manifest.lock */,
 				1BE0D860230398DF00E5E9E7 /* Headers */,
 				1BE0D861230398DF00E5E9E7 /* Sources */,
 				1BE0D862230398DF00E5E9E7 /* Frameworks */,
@@ -230,24 +209,24 @@
 			productReference = 1BE0D865230398DF00E5E9E7 /* LMLoading.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		52E2C64323042F8F0085CB6D /* LMIntegrationTests */ = {
+		52E2C64323042F8F0085CB6D /* LMLoadingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52E2C64C23042F8F0085CB6D /* Build configuration list for PBXNativeTarget "LMIntegrationTests" */;
+			buildConfigurationList = 52E2C64C23042F8F0085CB6D /* Build configuration list for PBXNativeTarget "LMLoadingTests" */;
 			buildPhases = (
-				6A94C1330AF7C233B48DEC8D /* [CP] Check Pods Manifest.lock */,
+				F605AE2D03842F3B94C929E0 /* [CP] Check Pods Manifest.lock */,
 				52E2C64023042F8F0085CB6D /* Sources */,
 				52E2C64123042F8F0085CB6D /* Frameworks */,
 				52E2C64223042F8F0085CB6D /* Resources */,
-				827316465D101114281538FE /* [CP] Embed Pods Frameworks */,
+				1570AB158629A550DCD4C436 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				52E2C64B23042F8F0085CB6D /* PBXTargetDependency */,
 			);
-			name = LMIntegrationTests;
+			name = LMLoadingTests;
 			productName = LMIntegrationTests;
-			productReference = 52E2C64423042F8F0085CB6D /* LMIntegrationTests.xctest */;
+			productReference = 52E2C64423042F8F0085CB6D /* LMLoadingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +263,7 @@
 			projectRoot = "";
 			targets = (
 				1BE0D864230398DF00E5E9E7 /* LMLoading */,
-				52E2C64323042F8F0085CB6D /* LMIntegrationTests */,
+				52E2C64323042F8F0085CB6D /* LMLoadingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,6 +292,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1570AB158629A550DCD4C436 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LMLoading-LMLoadingTests/Pods-LMLoading-LMLoadingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LMLoading-LMLoadingTests/Pods-LMLoading-LMLoadingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LMLoading-LMLoadingTests/Pods-LMLoading-LMLoadingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1BE0D87B2303ACD900E5E9E7 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,7 +327,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		3E93CCA1A925D632A74A29C2 /* [CP] Check Pods Manifest.lock */ = {
+		4E0D7FBF840C10B2A787B99F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,7 +349,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6A94C1330AF7C233B48DEC8D /* [CP] Check Pods Manifest.lock */ = {
+		F605AE2D03842F3B94C929E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,28 +364,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LMLoading-LMIntegrationTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LMLoading-LMLoadingTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		827316465D101114281538FE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LMLoading-LMIntegrationTests/Pods-LMLoading-LMIntegrationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LMLoading-LMIntegrationTests/Pods-LMLoading-LMIntegrationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LMLoading-LMIntegrationTests/Pods-LMLoading-LMIntegrationTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -411,10 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5266B5B523043A150033E633 /* LMTestCase.swift in Sources */,
 				5266B5B923043C280033E633 /* LMLoadingTests.swift in Sources */,
-				1B2FF30B2305046D00196029 /* LMTestController.swift in Sources */,
-				5266B5B3230438D80033E633 /* LMTestProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +527,7 @@
 		};
 		1BE0D86E230398DF00E5E9E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEA9EC2BD6C78A26FFEFD0A4 /* Pods-LMLoading.debug.xcconfig */;
+			baseConfigurationReference = 39CD24CE1BDA1BFA53510D78 /* Pods-LMLoading.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -580,7 +556,7 @@
 		};
 		1BE0D86F230398DF00E5E9E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4F0723F7DA8695281A7AFFD /* Pods-LMLoading.release.xcconfig */;
+			baseConfigurationReference = 41E17F4FB980B845C4A736D3 /* Pods-LMLoading.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -608,18 +584,18 @@
 		};
 		52E2C64D23042F8F0085CB6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65DCEA7B48B65489E317BFAF /* Pods-LMLoading-LMIntegrationTests.debug.xcconfig */;
+			baseConfigurationReference = CA9B3105F7D2E18D224C637B /* Pods-LMLoading-LMLoadingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LMIntegrationTests/Info.plist;
+				INFOPLIST_FILE = LMLoadingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMIntegrationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMLoadingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -628,18 +604,18 @@
 		};
 		52E2C64E23042F8F0085CB6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF3ABA53EB677FF4860B84A5 /* Pods-LMLoading-LMIntegrationTests.release.xcconfig */;
+			baseConfigurationReference = FA3ACE3282F3071EF73A72B8 /* Pods-LMLoading-LMLoadingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LMIntegrationTests/Info.plist;
+				INFOPLIST_FILE = LMLoadingTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMIntegrationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMLoadingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -667,7 +643,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52E2C64C23042F8F0085CB6D /* Build configuration list for PBXNativeTarget "LMIntegrationTests" */ = {
+		52E2C64C23042F8F0085CB6D /* Build configuration list for PBXNativeTarget "LMLoadingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52E2C64D23042F8F0085CB6D /* Debug */,

@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "52E2C64323042F8F0085CB6D"
-               BuildableName = "LMIntegrationTests.xctest"
-               BlueprintName = "LMIntegrationTests"
+               BuildableName = "LMLoadingTests.xctest"
+               BlueprintName = "LMLoadingTests"
                ReferencedContainer = "container:LMLoading.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -58,8 +58,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "52E2C64323042F8F0085CB6D"
-               BuildableName = "LMIntegrationTests.xctest"
-               BlueprintName = "LMIntegrationTests"
+               BuildableName = "LMLoadingTests.xctest"
+               BlueprintName = "LMLoadingTests"
                ReferencedContainer = "container:LMLoading.xcodeproj">
             </BuildableReference>
          </TestableReference>
