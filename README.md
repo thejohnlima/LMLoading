@@ -63,4 +63,4 @@ LMLoading.hide()
 
 ## 📜 License
 
-**LMLoading** is under MIT license. See the [LICENSE](LICENSE) file for more info.
+**LMLoading** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/limadeveloper/LMLoading/master/LICENSE) file for more info.
