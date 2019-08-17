@@ -43,7 +43,7 @@ class LMLoadingTests: XCTestCase {
   override func setUp() {
     super.setUp()
     controller = UIViewController()
-    controller?.view.frame = CGRect(origin: .zero, size: CGSize(width: 375, height: 812))
+    controller?.view.frame = UIScreen.main.bounds
     _ = controller?.view
   }
   
@@ -87,7 +87,6 @@ class LMLoadingTests: XCTestCase {
     let loadingView = self.loadingView
     
     XCTAssertEqual(loadingView?.frame, self.controller?.view.bounds ?? .zero)
-    XCTAssertEqual(loadingView?.backgroundContainerView.frame, self.controller?.view.bounds)
     XCTAssertEqual(loadingView?.backgroundContainerView.alpha, 0.75)
     XCTAssertEqual(loadingView?.animationContainerView.alpha, 1)
     XCTAssertEqual(loadingView?.animationContainerView.layer.cornerRadius, 4)
