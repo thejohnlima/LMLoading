@@ -10,6 +10,8 @@
 
 **LMLoading** is the best and easy way to show an loading in your view.
 
+![LMLoading](https://raw.githubusercontent.com/limadeveloper/LMLoading/master/Documents/LMLoading.gif)
+
 ## ❗️Requirements
 
 - iOS 10.0+
@@ -51,7 +53,8 @@ LMLoading.hide()
 
 ## 📱 Feature
 
-- [x] Can show with custom animation;
+- [x] Diferent kids of animations by default;
+- [x] Able to work with custom animations;
 - [x] Can hide with animation or not;
 - [x] iPad support;
 
