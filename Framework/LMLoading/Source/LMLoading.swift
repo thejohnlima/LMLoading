@@ -23,20 +23,23 @@
 import UIKit
 
 public class LMLoading {
-  
+
   // MARK: - Properties
   static var loadingView: LMLoadingView?
-  
+  static var presentation: Presentation?
+
   public static var isLoading: Bool {
     return loadingView?.superview != nil
   }
-  
+
+  typealias Presentation = (target: UIViewController, styleFull: Bool)
+
   // MARK: - Enums
   public enum ViewElements {
     case background
     case containerAnimation
     case animation
-    
+
     public var identifier: String {
       switch self {
       case .background:
@@ -48,18 +51,29 @@ public class LMLoading {
       }
     }
   }
-  
+
   // MARK: - Public Methods
-  public static func show(loading: LMLoadingType, target: UIView, completion: (() -> Void)? = nil) {
+  public static func show(loading: LMLoadingType,
+                          target: UIViewController,
+                          styleFull: Bool = true,
+                          completion: (() -> Void)? = nil) {
     DispatchQueue.main.async {
       loadingView?.removeFromSuperview()
       loadingView = UIView.fromNib()
+
       guard let loadingView = loadingView else { return }
-      target.addSubview(loadingView)
+
+      if styleFull {
+        target.navigationController?.setNavigationBarHidden(true, animated: true)
+      }
+
+      target.view.addSubview(loadingView)
+
+      self.presentation = (target, styleFull)
       self.loadingView?.start(animation: loading, completion: completion)
     }
   }
-  
+
   public static func hide(_ animation: LMLoadingType? = nil, completion: (() -> Void)? = nil) {
     DispatchQueue.main.async {
       guard let type = animation else {
@@ -73,8 +87,11 @@ public class LMLoading {
       }
     }
   }
-  
+
   public static func stop() {
     loadingView?.removeFromSuperview()
+    if presentation?.target.navigationController?.isNavigationBarHidden == true, presentation?.styleFull == true {
+      presentation?.target.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
   }
 }
