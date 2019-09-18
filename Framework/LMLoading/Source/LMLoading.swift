@@ -64,7 +64,7 @@ public class LMLoading {
       guard let loadingView = loadingView else { return }
 
       if styleFull {
-        target.navigationController?.setNavigationBarHidden(true, animated: true)
+        target.navigationController?.setNavigationBarHidden(true, animated: false)
       }
 
       target.view.addSubview(loadingView)
@@ -91,7 +91,7 @@ public class LMLoading {
   public static func stop() {
     loadingView?.removeFromSuperview()
     if presentation?.target.navigationController?.isNavigationBarHidden == true, presentation?.styleFull == true {
-      presentation?.target.navigationController?.setNavigationBarHidden(false, animated: true)
+      presentation?.target.navigationController?.setNavigationBarHidden(false, animated: false)
     }
   }
 }
