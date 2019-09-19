@@ -54,14 +54,14 @@ class LMLoadingTests: XCTestCase {
   
   // MARK: - Private Methods
   private func showLoading(_ type: LMLoadingType) {
-    guard let view = controller?.view else {
+    guard let controller = controller else {
       XCTFail("❌ view should't be nil")
       return
     }
     
     let expectation = self.expectation(description: "Wait for loading appear")
     
-    LMLoading.show(loading: type, target: view) {
+    LMLoading.show(loading: type, target: controller) {
       expectation.fulfill()
     }
     
