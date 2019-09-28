@@ -1,16 +1,16 @@
 # LMLoading
 
-[![GitHub release](https://img.shields.io/github/release/limadeveloper/LMLoading.svg)](https://github.com/limadeveloper/LMLoading/releases)
-[![Build Status](https://travis-ci.com/limadeveloper/LMLoading.svg?branch=master)](https://travis-ci.com/limadeveloper/LMLoading)
-[![codecov](https://codecov.io/gh/limadeveloper/LMLoading/branch/master/graph/badge.svg)](https://codecov.io/gh/limadeveloper/LMLoading)
+[![GitHub release](https://img.shields.io/github/release/thejohnlima/LMLoading.svg)](https://github.com/thejohnlima/LMLoading/releases)
+[![Build Status](https://travis-ci.com/thejohnlima/LMLoading.svg?branch=master)](https://travis-ci.com/thejohnlima/LMLoading)
+[![codecov](https://codecov.io/gh/thejohnlima/LMLoading/branch/master/graph/badge.svg)](https://codecov.io/gh/thejohnlima/LMLoading)
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/LMLoading)
 [![Language](https://img.shields.io/badge/language-Swift%205.0-orange.svg)](https://developer.apple.com/swift/)
-[![License](https://img.shields.io/github/license/limadeveloper/LMLoading.svg)](https://raw.githubusercontent.com/limadeveloper/LMLoading/master/LICENSE)
+[![License](https://img.shields.io/github/license/thejohnlima/LMLoading.svg)](https://raw.githubusercontent.com/thejohnlima/LMLoading/master/LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=NZN6YS87V9ZZW&currency_code=BRL&source=url)
 
 **LMLoading** is the best and easy way to show an loading in your view.
 
-![LMLoading](https://raw.githubusercontent.com/limadeveloper/LMLoading/master/Documents/LMLoading.gif)
+![LMLoading](https://raw.githubusercontent.com/thejohnlima/LMLoading/master/Documents/LMLoading.gif)
 
 ## ❗️Requirements
 
@@ -66,4 +66,4 @@ LMLoading.hide()
 
 ## 📜 License
 
-**LMLoading** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/limadeveloper/LMLoading/master/LICENSE) file for more info.
+**LMLoading** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/thejohnlima/LMLoading/master/LICENSE) file for more info.
