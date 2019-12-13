@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               = "LMLoading"
-  s.version            = "1.0.2"
+  s.version            = "1.0.3"
   s.summary            = "LMLoading Framework"
   s.description        = "LMLoading is the best and easy way to show an loading in your view"
   s.requires_arc       = true
