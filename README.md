@@ -1,12 +1,31 @@
-# LMLoading
+<h1 align="center">LMLoading</h1>
 
-[![GitHub release](https://img.shields.io/github/release/thejohnlima/LMLoading.svg)](https://github.com/thejohnlima/LMLoading/releases)
-[![Build Status](https://travis-ci.com/thejohnlima/LMLoading.svg?branch=master)](https://travis-ci.com/thejohnlima/LMLoading)
-[![codecov](https://codecov.io/gh/thejohnlima/LMLoading/branch/master/graph/badge.svg)](https://codecov.io/gh/thejohnlima/LMLoading)
-[![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/LMLoading)
-[![Language](https://img.shields.io/badge/language-Swift%205.0-orange.svg)](https://developer.apple.com/swift/)
-[![License](https://img.shields.io/github/license/thejohnlima/LMLoading.svg)](https://raw.githubusercontent.com/thejohnlima/LMLoading/master/LICENSE)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/thejohnlima)
+<p align="center">
+ <a href="https://github.com/thejohnlima/LMLoading/releases">
+  <img src="https://img.shields.io/github/v/release/thejohnlima/LMLoading?style=for-the-badge">
+ </a>
+ <a href="https://github.com/thejohnlima/LMLoading/actions">
+  <img src="https://img.shields.io/github/workflow/status/thejohnlima/LMLoading/CI/master?style=for-the-badge">
+ </a>
+ <a href="https://cocoapods.org/pods/LMLoading">
+  <img src="https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=for-the-badge">
+ </a><br>
+ <a href="https://github.com/thejohnlima/LMLoading">
+  <img src="https://img.shields.io/github/repo-size/thejohnlima/LMLoading.svg?style=for-the-badge">
+ </a>
+ <a href="https://raw.githubusercontent.com/thejohnlima/LMLoading/master/LICENSE">
+  <img src="https://img.shields.io/github/license/thejohnlima/LMLoading.svg?style=for-the-badge">
+ </a>
+ <a href="https://developer.apple.com/ios/">
+  <img src="https://img.shields.io/cocoapods/p/LMLoading?style=for-the-badge">
+ </a>
+ <a href="https://developer.apple.com/swift/">
+  <img src="https://img.shields.io/badge/Swift-5-blue.svg?style=for-the-badge">
+ </a>
+ <a href="https://patreon.com/thejohnlima">
+  <img src="https://img.shields.io/badge/donate-patreon-yellow.svg?style=for-the-badge">
+ </a>
+</p>
 
 **LMLoading** is the best and easy way to show an loading in your view.
 
