@@ -81,6 +81,9 @@ public class LMLoading {
         completion?()
         return
       }
+
+      loadingView?.systemActivityIndicator.stopAnimating()
+
       loadingView?.stop(animation: type) {
         self.stop()
         completion?()

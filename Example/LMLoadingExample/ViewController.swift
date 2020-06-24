@@ -28,7 +28,7 @@ class ViewController: UIViewController {
   // MARK: - Private Methods
   @objc
   private func showLoading() {
-    LMLoading.show(loading: .image, target: view)
+    LMLoading.show(loading: .activity, target: self)
   }
   
   private func hideLoading() {

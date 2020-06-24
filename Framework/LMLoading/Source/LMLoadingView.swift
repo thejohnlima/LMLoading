@@ -31,6 +31,7 @@ public class LMLoadingView: UIView {
   // MARK: - Properties
   @IBOutlet public weak var backgroundContainerView: UIView!
   @IBOutlet public weak var animationContainerView: UIView!
+  @IBOutlet public weak var systemActivityIndicator: UIActivityIndicatorView!
   
   // MARK: - Overrides
   override public func awakeFromNib() {
@@ -58,6 +59,13 @@ public class LMLoadingView: UIView {
   private func create(animation: LMLoadingType,
                       loop: Bool = false,
                       completion: LMCompletion.Empty? = nil) {
+    if case .activitySystem = animation {
+      systemActivityIndicator.isHidden = false
+      systemActivityIndicator.startAnimating()
+      animationContainerView.isHidden = true
+      return
+    }
+
     let animationView = AnimationView(name: animation.fileName, bundle: animation.bundle ?? Bundle(for: type(of: self)))
     animationView.frame = animationContainerView.bounds
     animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -67,7 +75,8 @@ public class LMLoadingView: UIView {
     if loop {
       animationView.loopMode = .loop
     }
-    
+
+    animationContainerView.isHidden = false
     animationContainerView.subviews.first { $0 is AnimationView }?.removeFromSuperview()
     animationContainerView.addSubview(animationView)
     
