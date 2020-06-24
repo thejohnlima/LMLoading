@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
             <subviews>
                 <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppa-Cl-Baa">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                     <accessibility key="accessibilityConfiguration" identifier="BACKGROUND_VIEW"/>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Tt-y7L">
@@ -27,7 +27,11 @@
                         <constraint firstAttribute="width" secondItem="hE1-Tt-y7L" secondAttribute="height" multiplier="2:1.5" id="Crn-cr-K5M"/>
                     </constraints>
                 </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Fb8-uY-gJE">
+                    <rect key="frame" x="169" y="323.66666666666669" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="hE1-Tt-y7L" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="DHw-tq-p38"/>
@@ -35,15 +39,22 @@
                 <constraint firstItem="ppa-Cl-Baa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mig-cF-H5e"/>
                 <constraint firstAttribute="trailing" secondItem="ppa-Cl-Baa" secondAttribute="trailing" id="PI7-5g-WTW"/>
                 <constraint firstItem="hE1-Tt-y7L" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-64" id="V3d-MG-rXH"/>
+                <constraint firstItem="Fb8-uY-gJE" firstAttribute="centerY" secondItem="ppa-Cl-Baa" secondAttribute="centerY" constant="-64" id="jg7-JP-pbm"/>
                 <constraint firstItem="hE1-Tt-y7L" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.15" id="nkc-kL-EX1"/>
+                <constraint firstItem="Fb8-uY-gJE" firstAttribute="centerX" secondItem="ppa-Cl-Baa" secondAttribute="centerX" id="xE7-2j-BcG"/>
                 <constraint firstAttribute="bottom" secondItem="ppa-Cl-Baa" secondAttribute="bottom" id="yyl-8Q-BbV"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="animationContainerView" destination="hE1-Tt-y7L" id="rcl-8u-LRx"/>
                 <outlet property="backgroundContainerView" destination="ppa-Cl-Baa" id="ocW-wr-E7E"/>
+                <outlet property="systemActivityIndicator" destination="Fb8-uY-gJE" id="rsf-kt-2CQ"/>
             </connections>
             <point key="canvasLocation" x="138" y="142"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

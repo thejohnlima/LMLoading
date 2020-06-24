@@ -25,6 +25,7 @@ import Foundation
 public enum LMLoadingType {
   case image
   case activity
+  case activitySystem
   case success
   case networkError
   case error
@@ -44,6 +45,8 @@ public enum LMLoadingType {
       return "error_animation"
     case .custom(let name, _):
       return name
+    case .activitySystem:
+      return ""
     }
   }
 
