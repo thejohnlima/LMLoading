@@ -32,6 +32,6 @@ class ViewController: UIViewController {
   }
   
   private func hideLoading() {
-    LMLoading.hide(.networkError)
+    LMLoading.hide(.success)
   }
 }
