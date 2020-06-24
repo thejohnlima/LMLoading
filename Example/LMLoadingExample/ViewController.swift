@@ -28,10 +28,10 @@ class ViewController: UIViewController {
   // MARK: - Private Methods
   @objc
   private func showLoading() {
-    LMLoading.show(loading: .activitySystem, target: self)
+    LMLoading.show(loading: .activity, target: self)
   }
   
   private func hideLoading() {
-    LMLoading.hide()
+    LMLoading.hide(.networkError)
   }
 }

@@ -27,7 +27,7 @@
                         <constraint firstAttribute="width" secondItem="hE1-Tt-y7L" secondAttribute="height" multiplier="2:1.5" id="Crn-cr-K5M"/>
                     </constraints>
                 </view>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Fb8-uY-gJE">
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Fb8-uY-gJE">
                     <rect key="frame" x="169" y="323.66666666666669" width="37" height="37"/>
                 </activityIndicatorView>
             </subviews>
