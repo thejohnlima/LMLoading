@@ -55,19 +55,33 @@ public class LMLoading {
   // MARK: - Public Methods
   public static func show(loading: LMLoadingType,
                           target: UIViewController,
+                          view: UIView? = nil,
                           styleFull: Bool = true,
+                          alphaBackground: CGFloat = 0.75,
+                          tintColor: UIColor? = nil,
                           completion: (() -> Void)? = nil) {
     DispatchQueue.main.async {
       loadingView?.removeFromSuperview()
       loadingView = UIView.fromNib()
+      loadingView?.backgroundContainerView.alpha = alphaBackground
 
-      guard let loadingView = loadingView else { return }
+      if let tintColor = tintColor {
+        loadingView?.systemActivityIndicator.color = tintColor
+      }
+
+      guard var loadingView = loadingView else { return }
 
       if styleFull {
         target.navigationController?.setNavigationBarHidden(true, animated: false)
       }
 
-      target.view.addSubview(loadingView)
+      if let view = view {
+        loadingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        loadingView.frame = view.bounds
+        view.addSubview(loadingView)
+      } else {
+        target.view.addSubview(loadingView)
+      }
 
       self.presentation = (target, styleFull)
       self.loadingView?.start(animation: loading, completion: completion)
