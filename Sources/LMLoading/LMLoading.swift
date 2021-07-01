@@ -53,6 +53,36 @@ public class LMLoading {
   }
 
   // MARK: - Public Methods
+  @available(iOS 15.0, *)
+  public static func present(loading: LMLoadingType,
+                             target: UIViewController,
+                             view: UIView? = nil,
+                             styleFull: Bool = true,
+                             alphaBackground: CGFloat = 0.75,
+                             tintColor: UIColor? = nil) async -> Bool {
+    await withCheckedContinuation { continuation in
+      show(
+        loading: loading,
+        target: target,
+        view: view,
+        styleFull: styleFull,
+        alphaBackground: alphaBackground,
+        tintColor: tintColor
+      ) {
+        continuation.resume(returning: true)
+      }
+    }
+  }
+
+  @available(iOS 15.0, *)
+  public static func dismiss(_ animation: LMLoadingType? = nil) async -> Bool {
+    await withCheckedContinuation { continuation in
+      hide(animation) {
+        continuation.resume(returning: true)
+      }
+    }
+  }
+
   public static func show(loading: LMLoadingType,
                           target: UIViewController,
                           view: UIView? = nil,
@@ -69,7 +99,7 @@ public class LMLoading {
         loadingView?.systemActivityIndicator.color = tintColor
       }
 
-      guard var loadingView = loadingView else { return }
+      guard let loadingView = loadingView else { return }
 
       if styleFull {
         target.navigationController?.setNavigationBarHidden(true, animated: false)
