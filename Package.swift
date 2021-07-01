@@ -5,8 +5,7 @@ import PackageDescription
 let package = Package(
   name: "LMLoading",
   platforms: [
-    .iOS(.v13),
-    .macOS(.v10_13)
+    .iOS(.v13)
   ],
   products: [
     .library(

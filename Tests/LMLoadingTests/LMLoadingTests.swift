@@ -21,16 +21,95 @@
 //  SOFTWARE.
 
 @testable import LMLoading
+import Lottie
 import XCTest
 
 class LMLoadingTests: XCTestCase {
-  
+
+  // MARK: - Properties
+  private var controller: UIViewController?
+
+  var loadingView: LMLoadingView? {
+    let view = controller?.view.subviews.first { $0 is LMLoadingView } as? LMLoadingView
+    return view
+  }
+
+  var animationView: AnimationView? {
+    let view = loadingView?.animationContainerView.subviews.first { $0 is AnimationView } as? AnimationView
+    return view
+  }
+
   // MARK: - Overrides
   override func setUp() {
     super.setUp()
+    controller = UIViewController()
+    controller?.view.frame = UIScreen.main.bounds
+    _ = controller?.view
   }
-  
+
   override func tearDown() {
+    controller = nil
     super.tearDown()
+  }
+
+  // MARK: - Private Methods
+  private func showLoading(_ type: LMLoadingType) {
+    guard let controller = controller else {
+      XCTFail("❌ view should't be nil")
+      return
+    }
+
+    let expectation = self.expectation(description: "Wait for loading appear")
+
+    LMLoading.show(loading: type, target: controller) {
+      expectation.fulfill()
+    }
+
+    waitForExpectations(timeout: 2)
+  }
+
+  private func hideLoading(_ type: LMLoadingType? = nil) {
+    let expectation = self.expectation(description: "Wait for hide loading")
+
+    LMLoading.hide(type) {
+      expectation.fulfill()
+    }
+
+    waitForExpectations(timeout: 2)
+  }
+
+  // MARK: - Test Methods
+  func testShowLoading() {
+    showLoading(.activity)
+
+    XCTAssertTrue(LMLoading.isLoading)
+
+    let loadingView = self.loadingView
+
+    XCTAssertEqual(loadingView?.frame, self.controller?.view.bounds ?? .zero)
+    XCTAssertEqual(loadingView?.backgroundContainerView.alpha, 0.75)
+    XCTAssertEqual(loadingView?.animationContainerView.alpha, 1)
+    XCTAssertEqual(loadingView?.animationContainerView.layer.cornerRadius, 4)
+    XCTAssertEqual(loadingView?.animationContainerView.backgroundColor, .white)
+    XCTAssertEqual(loadingView?.animationContainerView.isHidden, false)
+
+    let animationView = self.animationView
+    XCTAssertNotNil(animationView?.animation)
+    XCTAssertEqual(animationView?.frame, loadingView?.animationContainerView.bounds ?? .zero)
+    XCTAssertEqual(animationView?.contentMode, .scaleAspectFit)
+    XCTAssertEqual(animationView?.loopMode, .loop)
+    XCTAssertEqual(animationView?.accessibilityIdentifier, "ANIMATION_VIEW")
+  }
+
+  func testHideLoading() {
+    showLoading(.image)
+    hideLoading()
+    XCTAssertNil(loadingView)
+  }
+
+  func testHideLoadingWithAnimation() {
+    showLoading(.image)
+    hideLoading(.success)
+    XCTAssertNil(loadingView)
   }
 }

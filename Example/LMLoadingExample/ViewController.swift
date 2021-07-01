@@ -7,6 +7,7 @@
 //
 
 import LMLoading
+import UIKit
 
 class ViewController: UIViewController {
 
