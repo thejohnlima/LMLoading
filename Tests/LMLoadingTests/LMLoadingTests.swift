@@ -21,7 +21,6 @@
 //  SOFTWARE.
 
 @testable import LMLoading
-import Lottie
 import XCTest
 
 class LMLoadingTests: XCTestCase {
@@ -29,13 +28,14 @@ class LMLoadingTests: XCTestCase {
   // MARK: - Properties
   private var controller: UIViewController?
 
+  static var allTests = [
+    ("testShowLoading", testShowLoading),
+    ("testHideLoading", testHideLoading),
+    ("testHideLoadingWithAnimation", testHideLoadingWithAnimation)
+  ]
+
   var loadingView: LMLoadingView? {
     let view = controller?.view.subviews.first { $0 is LMLoadingView } as? LMLoadingView
-    return view
-  }
-
-  var animationView: AnimationView? {
-    let view = loadingView?.animationContainerView.subviews.first { $0 is AnimationView } as? AnimationView
     return view
   }
 
@@ -92,13 +92,6 @@ class LMLoadingTests: XCTestCase {
     XCTAssertEqual(loadingView?.animationContainerView.layer.cornerRadius, 4)
     XCTAssertEqual(loadingView?.animationContainerView.backgroundColor, .white)
     XCTAssertEqual(loadingView?.animationContainerView.isHidden, false)
-
-    let animationView = self.animationView
-    XCTAssertNotNil(animationView?.animation)
-    XCTAssertEqual(animationView?.frame, loadingView?.animationContainerView.bounds ?? .zero)
-    XCTAssertEqual(animationView?.contentMode, .scaleAspectFit)
-    XCTAssertEqual(animationView?.loopMode, .loop)
-    XCTAssertEqual(animationView?.accessibilityIdentifier, "ANIMATION_VIEW")
   }
 
   func testHideLoading() {
