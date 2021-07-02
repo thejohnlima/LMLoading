@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.platform           = :ios, "12.1"
   s.source             = { :git => "https://github.com/thejohnlima/LMLoading.git", :tag => "#{s.version}" }
   s.framework          = "UIKit"
-  s.source_files       = "Framework/LMLoading/**/*.{swift}"
-  s.resources          = "Framework/LMLoading/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,json}"
+  s.source_files       = "Sources/LMLoading/**/*.{swift}"
+  s.resources          = "Sources/LMLoading/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf,json}"
   s.swift_version      = "5.0"
   s.dependency 'lottie-ios'
 end
