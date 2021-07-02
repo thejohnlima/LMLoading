@@ -404,7 +404,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/thejohnlima/LMLoading.git";
 			requirement = {
-				branch = feature/spm_support;
+				branch = release/v1.0.4;
 				kind = branch;
 			};
 		};
