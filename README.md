@@ -22,8 +22,8 @@
  <a href="https://developer.apple.com/swift/">
   <img src="https://img.shields.io/badge/Swift-5-blue.svg?style=for-the-badge">
  </a>
- <a href="https://patreon.com/thejohnlima">
-  <img src="https://img.shields.io/badge/donate-patreon-yellow.svg?style=for-the-badge">
+ <a href="https://paypal.me/johncls">
+  <img src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge">
  </a>
 </p>
 
@@ -33,10 +33,21 @@
 
 ## ❗️Requirements
 
-- iOS 10.0+
+- iOS 12.1+
 - Swift 5.0+
 
 ## ⚒ Installation
+
+### Swift Package Manager
+
+**LMLoading** is available through [SPM](https://developer.apple.com/videos/play/wwdc2019/408/). To install
+it, follow the steps:
+
+```script
+Open Xcode project > File > Add Packages
+```
+
+After that, put the url in the field: `https://github.com/thejohnlima/LMLoading.git`
 
 ### CocoaPods
 

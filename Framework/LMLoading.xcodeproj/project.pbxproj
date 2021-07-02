@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B10CD31268D637100736A99 /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = 1B10CD30268D637100736A99 /* Sources */; };
 		1B10CD34268D63DD00736A99 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1B10CD33268D63DD00736A99 /* Lottie */; };
+		1B9C8B90268EC78B00E705D2 /* LMLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C8B8F268EC78B00E705D2 /* LMLoadingTests.swift */; };
 		1BE0D86A230398DF00E5E9E7 /* LMLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE0D868230398DF00E5E9E7 /* LMLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BFF3705268EBEA400CF0CEF /* LMLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE0D865230398DF00E5E9E7 /* LMLoading.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		1B10CD30268D637100736A99 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = ../../Sources; sourceTree = "<group>"; };
+		1B9C8B8F268EC78B00E705D2 /* LMLoadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMLoadingTests.swift; sourceTree = "<group>"; };
 		1BE0D865230398DF00E5E9E7 /* LMLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE0D868230398DF00E5E9E7 /* LMLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLoading.h; sourceTree = "<group>"; };
 		1BE0D869230398DF00E5E9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		1BFF370D268EBF5400CF0CEF /* LMLoadingTests */ = {
 			isa = PBXGroup;
 			children = (
+				1B9C8B8F268EC78B00E705D2 /* LMLoadingTests.swift */,
 			);
 			path = LMLoadingTests;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9C8B90268EC78B00E705D2 /* LMLoadingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +370,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMLoading;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -394,7 +398,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.LMLoading;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
