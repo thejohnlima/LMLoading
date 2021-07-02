@@ -5,7 +5,9 @@ import PackageDescription
 let package = Package(
   name: "LMLoading",
   platforms: [
-    .iOS(.v13)
+    .macOS(.v10_13),
+    .iOS(.v13),
+    .tvOS(.v9)
   ],
   products: [
     .library(
@@ -19,8 +21,15 @@ let package = Package(
   targets: [
     .target(
       name: "LMLoading",
-      dependencies: [
-        "Lottie"
+      dependencies: ["Lottie"],
+      exclude: [
+        "../../README.md",
+        "../../Documents",
+        "../../Example",
+        "../../fastlane",
+        "../../Gemfile",
+        "../../Gemfile.lock",
+        "../../LMLoading.podspec"
       ],
       resources: [
         .process("ResourceFiles")
@@ -28,9 +37,7 @@ let package = Package(
     ),
     .testTarget(
       name: "LMLoadingTests",
-      dependencies: [
-        "LMLoading"
-      ]
+      dependencies: ["LMLoading"]
     )
   ]
 )
