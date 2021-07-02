@@ -26,10 +26,16 @@ platform :ios do
   # lanes
   # -----------------------
   lane :tests do
-    spm(
-      command: "test",
-      build_path: "reports",
-      configuration: "debug"
+    scan(
+      xcargs: "ONLY_ACTIVE_ARCH=YES",
+      scheme: "LMLoading",
+      project: "Framework/LMLoading.xcodeproj",
+      code_coverage: true,
+      output_directory: "reports",
+      fail_build: false,
+      suppress_xcode_output: false,
+      device: "iPhone 12 Pro",
+      configuration: "Debug"
     )
   end
 

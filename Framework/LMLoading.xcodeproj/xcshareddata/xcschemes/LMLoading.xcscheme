@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52E2C64323042F8F0085CB6D"
+               BlueprintIdentifier = "1BFF3700268EBEA400CF0CEF"
                BuildableName = "LMLoadingTests.xctest"
                BlueprintName = "LMLoadingTests"
                ReferencedContainer = "container:LMLoading.xcodeproj">
@@ -53,6 +53,16 @@
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1BFF3700268EBEA400CF0CEF"
+               BuildableName = "LMLoadingTests.xctest"
+               BlueprintName = "LMLoadingTests"
+               ReferencedContainer = "container:LMLoading.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
