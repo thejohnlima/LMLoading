@@ -34,7 +34,6 @@ platform :ios do
       output_directory: "reports",
       fail_build: false,
       suppress_xcode_output: false,
-      device: "iPhone 12 Pro",
       configuration: "Debug"
     )
   end
