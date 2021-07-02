@@ -22,15 +22,6 @@ let package = Package(
     .target(
       name: "LMLoading",
       dependencies: ["Lottie"],
-      exclude: [
-        "../../README.md",
-        "../../Documents",
-        "../../Example",
-        "../../fastlane",
-        "../../Gemfile",
-        "../../Gemfile.lock",
-        "../../LMLoading.podspec"
-      ],
       resources: [
         .process("ResourceFiles")
       ]
