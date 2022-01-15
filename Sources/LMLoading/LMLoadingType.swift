@@ -29,7 +29,7 @@ public enum LMLoadingType {
   case success
   case networkError
   case error
-  case custom(_ name: String, bundle: Bundle = .main)
+  case custom(_ name: String, bundle: Bundle?)
 
   var fileName: String {
     switch self {
@@ -53,7 +53,7 @@ public enum LMLoadingType {
   var bundle: Bundle {
     switch self {
     case .custom(_, let bundle):
-      return bundle
+      return bundle ?? Bundle.bundle
     default:
       return Bundle.bundle
     }
