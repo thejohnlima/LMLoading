@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		1B2FF2FE2304FE9E00196029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2FF2FC2304FE9E00196029 /* Main.storyboard */; };
 		1B2FF3002304FEA400196029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2FF2FF2304FEA400196029 /* Assets.xcassets */; };
 		1B2FF3032304FEA400196029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2FF3012304FEA400196029 /* LaunchScreen.storyboard */; };
+		1BC98B4F27934B8100067CA9 /* LMLoading in Frameworks */ = {isa = PBXBuildFile; productRef = 1BC98B4E27934B8100067CA9 /* LMLoading */; };
 		A6640AA5BD0BA0E6EC5BAD6C /* Pods_LMLoadingExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B039BA0E14188CD08B0E19C7 /* Pods_LMLoadingExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC98B4F27934B8100067CA9 /* LMLoading in Frameworks */,
 				A6640AA5BD0BA0E6EC5BAD6C /* Pods_LMLoadingExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,13 +103,15 @@
 				1B2FF2EF2304FE9E00196029 /* Sources */,
 				1B2FF2F02304FE9E00196029 /* Frameworks */,
 				1B2FF2F12304FE9E00196029 /* Resources */,
-				8DE2E2385F0F6F039EB93702 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LMLoadingExample;
+			packageProductDependencies = (
+				1BC98B4E27934B8100067CA9 /* LMLoading */,
+			);
 			productName = LMLoadingExample;
 			productReference = 1B2FF2F32304FE9E00196029 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 1B2FF2EA2304FE9E00196029;
+			packageReferences = (
+				1BC98B4D27934B8100067CA9 /* XCRemoteSwiftPackageReference "LMLoading" */,
+			);
 			productRefGroup = 1B2FF2F42304FE9E00196029 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,23 +166,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8DE2E2385F0F6F039EB93702 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LMLoadingExample/Pods-LMLoadingExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LMLoadingExample/Pods-LMLoadingExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LMLoadingExample/Pods-LMLoadingExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C2271B72DF10C149A4F77D20 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BC98B4D27934B8100067CA9 /* XCRemoteSwiftPackageReference "LMLoading" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thejohnlima/LMLoading.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BC98B4E27934B8100067CA9 /* LMLoading */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BC98B4D27934B8100067CA9 /* XCRemoteSwiftPackageReference "LMLoading" */;
+			productName = LMLoading;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B2FF2EB2304FE9E00196029 /* Project object */;
 }
