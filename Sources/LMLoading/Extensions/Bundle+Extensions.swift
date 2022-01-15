@@ -22,7 +22,7 @@
 
 import Foundation
 
-extension Bundle {
+public extension Bundle {
   static var bundle: Bundle {
     var result = Bundle(for: LMLoading.self)
 
