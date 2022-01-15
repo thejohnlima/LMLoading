@@ -66,7 +66,7 @@ public class LMLoadingView: UIView {
       return
     }
 
-    let animationView = AnimationView(name: animation.fileName, bundle: animation.bundle ?? Bundle.module)
+    let animationView = AnimationView(name: animation.fileName, bundle: animation.bundle)
     animationView.frame = animationContainerView.bounds
     animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     animationView.contentMode = .scaleAspectFit

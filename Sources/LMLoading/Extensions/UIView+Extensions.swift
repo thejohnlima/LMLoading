@@ -27,12 +27,24 @@ let loadNibError = "Could not load nib with identifier"
 extension UIView {
   static func fromNib<T: AnyObject>() -> T {
     let name = String(describing: T.self)
-    let bundle = Bundle.module
+    let bundle = Bundle.bundle
     let item = UINib(nibName: name, bundle: bundle).instantiate(withOwner: self).first
 
     guard let result = item as? T else {
       fatalError("⚠️ \(loadNibError): \(T.self)")
     }
+
+    return result
+  }
+}
+
+extension Bundle {
+  static var bundle: Bundle {
+    var result = Bundle(for: LMLoading.self)
+
+    #if SWIFT_PACKAGE
+    result = Bundle.module
+    #endif
 
     return result
   }

@@ -50,12 +50,12 @@ public enum LMLoadingType {
     }
   }
 
-  var bundle: Bundle? {
+  var bundle: Bundle {
     switch self {
     case .custom(_, let bundle):
       return bundle
     default:
-      return nil
+      return Bundle.bundle
     }
   }
 }
