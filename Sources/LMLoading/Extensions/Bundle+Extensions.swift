@@ -22,8 +22,8 @@
 
 import Foundation
 
-public extension Bundle {
-  static var bundle: Bundle {
+extension Bundle {
+  public static var bundle: Bundle {
     var result = Bundle(for: LMLoading.self)
 
     #if SWIFT_PACKAGE
