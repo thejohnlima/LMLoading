@@ -1,3 +1,23 @@
-PODFILE CHECKSUM: 1e2fb3705439d6d65e246b63d5cdb2ebb58d5ee3
+PODS:
+  - LMLoading (1.0.4):
+    - lottie-ios
+  - lottie-ios (3.3.0)
 
-COCOAPODS: 1.10.1
+DEPENDENCIES:
+  - LMLoading (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+
+EXTERNAL SOURCES:
+  LMLoading:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LMLoading: 6d87282f271e013a56252ac5a73e27802589b582
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+
+PODFILE CHECKSUM: 26221841df94451b07e388b29ee5f8ba21ddb676
+
+COCOAPODS: 1.11.2
